@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body{
+        background: blueviolet;
+    }
+</style>
+<body>
+<center>
+<form action="login.do" method="post">
+<table border="2">
+    <tr><td align="center">아이디</td><td><input type="text" name="id"/></td></tr>
+    <tr><td align="center">비밀번호</td><td><input type="text" name="pw"/></td></tr>
+    <tr><td align="center" colspan="2"><input type="submit" value="LOGIN"/></td></tr>
+</table>
+</form>
+<br><br>
+<h2>
+<a href="insertUser.html">회원가입</a>
+</h2>
+</center> <!--만일 이 파일을 가동시킨후 getUser()시 값이 있으면 등록된 회원이므로 getBoard.do로 보내고 그렇지 않으면 다시 회원가입시키려 이 파일로 와야함-->
+</body>
+</html>
