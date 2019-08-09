@@ -14,29 +14,29 @@ public class BoardServiceImpl implements BoardService {
     private BoardDAO boardDAO; //이것의 선언이 없으면 bean이 없다고 오류가 만들어질 수 있다. bean객체 안만들고 끌어들인다는 의미
     //UserService interface의 메소드는 child에서 구현한다
     //UserService.java 는 인터페이스 임
-    @Override
+
     public void insertBoard(BoardVO vo) throws Exception {
         boardDAO.insertBoard(vo);
     }
 
-    @Override
+
     public void updateBoard(BoardVO vo) throws Exception {
         boardDAO.updateBoard(vo);
     }
 
-    @Override
+
     public void deleteBoard(BoardVO vo) throws Exception {
         boardDAO.deleteBoard(vo);
     }
 
-    @Override
+
     public ArrayList<BoardVO> getBoardList(BoardVO vo) throws Exception {
         return boardDAO.getBoardList();
     }
 
 
 
-    @Override
+
     public BoardVO getBoard(BoardVO vo) throws Exception {
         return boardDAO.getBoard(vo);
     }

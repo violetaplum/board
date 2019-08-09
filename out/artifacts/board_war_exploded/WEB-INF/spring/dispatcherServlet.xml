@@ -11,6 +11,7 @@
                  http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
         <context:component-scan base-package="sangdam.biz" />
+        <context:component-scan base-package="sangdam.biz.board.dao"/>
         <context:component-scan base-package="sangdam.view"/>
         <context:component-scan base-package="sangdam.view.user"/>
         <!-- Enables the Spring MVC @Controller programming model -->
